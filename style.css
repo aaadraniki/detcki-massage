@@ -11,6 +11,13 @@ a{
   -webkit-tap-highlight-color: transparent;
 }
 
+body{
+  background-image: url(img/bg.svg);
+  background-repeat: repeat;
+  background-size: contain;
+  background-color: #fafeff;
+}
+
 .container {  display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 100vh auto auto;
@@ -40,6 +47,7 @@ header {
 .out {padding-left: 5%; padding-right: 5%;}
 
 .main-header {
+  background: white;
   padding: 0 30px;
   height: 80px;
   border-bottom: 1px solid #d8d8d8;
@@ -52,7 +60,7 @@ header {
   font-size: 30px;
   margin-top: 14px;
   float: left;
-  color: #000;
+  color: #2b6684;
 }
 
 .main-nav {
@@ -78,7 +86,7 @@ header {
   white-space: nowrap;
 }
 .main-nav a:hover {
-  color: #000;
+  color: #2b6684;
 }
 .main-nav a:hover:after {
   content: '';
@@ -119,7 +127,7 @@ header {
   position: absolute;
   width: 20px;
   height: 2px;
-  background-color: #000;
+  background-color: #2b6684;
   top: 50%;
   left: 50%;
   margin-top: -1px;
@@ -153,7 +161,7 @@ header {
   display: block;
   height: 65%;
   width: 2px;
-  background-color: #000;
+  background-color: #2b6684;
   opacity: 0.3;
 }
 
@@ -170,6 +178,7 @@ header {
  font-size: 35px;
  margin-bottom: 15px;
  align-items: stretch;
+ color: #2b6684;
  
 }
 .owner-inf{
@@ -190,16 +199,17 @@ header {
 .sub-inf{
   font-size: 20px;
   text-align: justify;
+  color: #2b6684;
 }
 
 .sub:hover {
-  color: #000;
+  color: #2b6684;
 }
 .sub:hover:after {
   content: '';
   display: block;
   width: 20%;
-  border-bottom: 2px solid #000;;
+  border-bottom: 2px solid #2b6684;
 }
 
 .call-mob{
@@ -212,7 +222,7 @@ header {
   cursor: pointer;
   border: none;
   border-radius: 20px;
-  background-color: #000;
+  background-color: #feab6b;
   color: white;
   font-size: 20px;
   text-decoration: none;
@@ -220,7 +230,7 @@ header {
 }
 
 .aboutMe{
-  background: #F6F6F6;
+  background: #e6f1f5;
   margin-bottom: 13vh;
 }
 
@@ -265,6 +275,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: #fcfeff;
 
 }
 
@@ -275,7 +286,7 @@ header {
 
 .cost{
   margin-top: 10px;
-  background-color: #3d3d3d;
+  background-color: #feab6b;
   color: white;
   border-radius: 8px;
   padding: 4px;
@@ -288,13 +299,14 @@ header {
   font-weight: bold;
   font-size: 25px;
   margin-bottom: 3vh;
+  color: #2b6684;
 }
 
 
 .contact-cont{
   width: 100%;
   height: auto;
-  background-color: #F6F6F6;
+  background-color: #e6f1f5;
   padding-top: 7vh;
   margin-top: 10vh;
   padding-bottom: 7vh;
@@ -375,8 +387,8 @@ header {
 footer{
   width: 100%;
   height: 7vh;
-  background-color: #3d3d3d;
-  color: lightgray;
+  background-color: #e6f1f5;
+  color: gray;
   display: flex;
 }
 
@@ -405,7 +417,7 @@ footer div{
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: #000;
+    color: #2b6684;
     font-weight: bold;
     font-size: 35px;
     transition: 0.6s ease;
@@ -462,9 +474,7 @@ footer div{
   margin-bottom: 2vh;
 }
 
-.slideText {
 
-}
 
 
 @media screen and (max-width: 950px) and (min-width: 701px){
@@ -544,7 +554,7 @@ footer div{
     left: -999px;
     padding: 30px 80px 30px 30px;
     margin: 0;
-
+    height: 100vh;
   }
   
   .move {
@@ -654,6 +664,18 @@ footer div{
 .icon-name a{
   font-size: 16px;
 }
+
+body{
+  
+  background-size: 100vh;
+  background-image: url(img/bg2.svg);
+
+}
+
+.slideText {
+  background: #fafeff;
+}
+
 
 }
 
