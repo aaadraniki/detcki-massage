@@ -55,6 +55,10 @@ header {
   margin-bottom: 10vh;
 }
 
+
+
+
+
 .logo {
   font-weight: 700;
   font-size: 30px;
@@ -274,7 +278,7 @@ header {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   background: #fcfeff;
 
 }
@@ -284,14 +288,7 @@ header {
   cursor: pointer;
 }
 
-.cost{
-  margin-top: 10px;
-  background-color: #feab6b;
-  color: white;
-  border-radius: 8px;
-  padding: 4px;
 
-}
 
 .header-cont{
   width: 100%;
@@ -320,16 +317,17 @@ header {
 }
 .contacts{
   margin: auto;
-  width: 60%;
+  width: 70%;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: justify;
 }
 
 .contact-text{
-  width: 50%;
+  width: 32%;
+  order: 3;
 }
 
 
@@ -344,7 +342,7 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin-bottom: 20px;
+  
 
 }
 
@@ -382,6 +380,11 @@ header {
 .contact-icon{
   padding: 15px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 145px;
 }
 
 footer{
@@ -474,6 +477,75 @@ footer div{
   margin-bottom: 2vh;
 }
 
+.dopnum{
+  display: none;
+}
+
+.plcl::-webkit-input-placeholder {
+    color: red;
+ }
+
+.plclnormal::-webkit-input-placeholder {
+    color: rgb(118, 118, 118);
+ }
+
+
+textarea {
+    resize: none; 
+}
+
+input, textarea {outline:none;}
+
+.formcont{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  order: 2;
+  margin-top: 0;
+}
+#form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  height: 180px;
+  justify-content: space-between;
+  
+}
+
+form input,textarea{
+  border: none;
+  padding: 2.5px;
+  border-radius:5px;
+}
+
+textarea{
+  height: 50px;
+}
+
+form input,textarea::-webkit-input-placeholder{
+  padding-left: 15px;
+}
+
+.formheader{
+  font-weight: bold;
+    color: #2b6684;
+    margin-bottom: 10px;
+}
+
+#inputSub{
+  background-color: #feab6b;
+  color: white;
+  height: auto;
+  width: auto;
+  padding-left: 0;
+  margin:0 auto;
+  padding: 5px 8px;
+
+}
 
 
 
@@ -482,6 +554,15 @@ footer div{
     display: none;
   }
 
+  .formcont{
+  width: 100%;
+  order: 3;
+  margin-top: 5vh;
+}
+
+.contact-text{
+  order: 2;
+}
 
   .contact-text {
     width: 100%;
@@ -489,7 +570,7 @@ footer div{
 }
 
 .contacts{
-  width: 80%;
+  width: 55%;
 }
   
 .contact-icon{
@@ -504,11 +585,28 @@ footer div{
   font-size: 16px;
 }
   
-
+.contact-icon {
+  order: 2;
+}
   
 }
 
 @media screen and (max-width: 700px) /*and (min-width: 320px)*/{
+  .formcont{
+  width: 100%;
+  order: 3;
+  margin-top: 5vh;
+}
+
+.contact-text{
+  order: 1;
+}
+
+.contact-icon {
+  order: 2;
+}
+
+
   .main-header{
     min-width: 320px;
     height: 50px;
@@ -676,6 +774,14 @@ body{
   background: #fafeff;
 }
 
+.dopnum{
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: #2b6684;
+  font-size: 25px;
+  margin-top: 30px;
+}
 
 }
 
